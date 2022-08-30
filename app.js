@@ -1,3 +1,11 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+// importando e configurando o dotenv
+
+import './src/database';
+// importando e startando connection com o banco
+
 import express from 'express';
 import homeRoutes from './src/routes/homeRoutes';
 
