@@ -1,5 +1,6 @@
 require('dotenv').config();
-//Onde eu configuro a minha conexão com o banco
+// Onde eu configuro a minha conexão com o banco
+
 module.exports = {
   dialect: 'mysql',
   host: process.env.DATABASE_HOST,
