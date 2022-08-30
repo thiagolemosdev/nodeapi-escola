@@ -1,27 +1,22 @@
-_id: req_15c7eae2d565478fba32d2dc8565ac17
+_id: req_fc47575b85e24d5c941eb3e5796fb2d9
 type: Request
 parentId: fld_82d49f09d1614409be51afbef391d460
-modified: 1661884177057
-created: 1661835758721
+modified: 1661884204607
+created: 1661884183405
 url: "{{ _.baseURL }}/users"
-name: Store
+name: Index
 description: ""
-method: POST
+method: GET
 body:
   mimeType: application/json
-  text: |-
-    {
-    	 "nome": "Thiago",
-       "email": "i@th.com",
-       "password": "1235678"
-    }
+  text: ""
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
     id: pair_5248cccd4bca45e9883329cabce39c21
 authentication: {}
-metaSortKey: -1661835758721
+metaSortKey: -1661825593014
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
