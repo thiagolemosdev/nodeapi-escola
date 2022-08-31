@@ -1,22 +1,30 @@
-_id: req_076fa46485cf4caf9b4fca782d2a8f02
+_id: req_3e44f278e727437395354a4edbbc1d6e
 type: Request
 parentId: fld_3b5eb61332f1413cbf294d4957213907
-modified: 1661955227469
-created: 1661926132213
+modified: 1661958107436
+created: 1661955229203
 url: "{{ _.baseURL }}/alunos"
-name: Index
+name: Store
 description: ""
-method: GET
+method: POST
 body:
   mimeType: application/json
-  text: ""
+  text: |-
+    {
+    		"nome": "Marcelo",
+    		"sobrenome": "lemos",
+    		"email": "marcelo@th.com",
+    		"idade": 25,
+    		"altura": 1.7,
+    		"peso": 95.5
+    }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_48453400684f42aa913826486b8651d4
+    id: pair_46bc82e42c34432d862ae099f248c977
 authentication: {}
-metaSortKey: -1661926132213
+metaSortKey: -1661926132163
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
