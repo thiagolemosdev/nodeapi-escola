@@ -1,7 +1,7 @@
 _id: req_875a84816ff94592804270f6c2036e21
 type: Request
 parentId: fld_549869f0239247c2bd0c4567146b702e
-modified: 1661923669969
+modified: 1661955976201
 created: 1661916181925
 url: "{{ _.baseURL }}/tokens"
 name: Token
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"email": "th@th.com",
+    	"email": "thiago@th.com",
     	"password": "123456"
     }
 parameters: []
