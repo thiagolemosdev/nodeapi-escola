@@ -1,9 +1,9 @@
 _id: req_5482088b0d4d4a0eba47379ba3fde39a
 type: Request
 parentId: fld_82d49f09d1614409be51afbef391d460
-modified: 1661907385615
+modified: 1661926118105
 created: 1661897623820
-url: "{{ _.baseURL }}/users/0803b64d-f9ca-48de-ae97-e6843bed5e11"
+url: "{{ _.baseURL }}/users/"
 name: Update
 description: ""
 method: PUT
@@ -13,15 +13,17 @@ body:
     
     {
     	 "nome": "Oliveira",
-       "email": "oi@lindo.com",
-       "password": "1235228"
+       "email": "thiag@thia.com",
+       "password": "123456"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
     id: pair_5248cccd4bca45e9883329cabce39c21
-authentication: {}
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU0ZTc4NzlmLWJiZWUtNGY5Yy05ODQ1LTA4NGVmMTRkYzBkNCIsImVtYWlsIjoidGhpQHRoLmNvbSIsImlhdCI6MTY2MTkyMzM3OSwiZXhwIjoxNjYyNTI4MTc5fQ.VrTEIu6tmrApXCFPEU9fR_8Uk0sKjDGekZ56K3xc9J0
 metaSortKey: -1661817968733.75
 isPrivate: false
 settingStoreCookies: true

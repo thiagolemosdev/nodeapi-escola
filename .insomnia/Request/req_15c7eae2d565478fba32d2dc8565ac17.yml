@@ -1,7 +1,7 @@
 _id: req_15c7eae2d565478fba32d2dc8565ac17
 type: Request
 parentId: fld_82d49f09d1614409be51afbef391d460
-modified: 1661897656070
+modified: 1661923186372
 created: 1661835758721
 url: "{{ _.baseURL }}/users"
 name: Store
@@ -12,8 +12,8 @@ body:
   text: |-
     {
     	 "nome": "Thiago",
-       "email": "tdf@th.com",
-       "password": "1235678"
+       "email": "thiago@th.com",
+       "password": "123456"
     }
 parameters: []
 headers:
