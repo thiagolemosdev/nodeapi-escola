@@ -8,6 +8,11 @@ export default class User extends Model {
     // chamando o sequelize
 
     super.init({
+      id: {
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        primaryKey: true,
+      },
       nome: {
         type: Sequelize.STRING,
         defaultValue: '',
@@ -50,10 +55,17 @@ export default class User extends Model {
     });
 
     this.addHook('beforeSave', async (user) => {
-      user.password_hash = await bcryptjs.hash(user.password, 8);
+      if (user.password) {
+        user.password_hash = await bcryptjs.hash(user.password, 8);
+      }
     });
     // criando o hash de senha
 
     return this;
   }
+
+  passwordIsValid(password) {
+    return bcryptjs.compare(password, this.password_hash);
+  }
+  // Comparando senha do login com senha do banco
 }

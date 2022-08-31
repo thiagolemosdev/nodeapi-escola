@@ -2,9 +2,10 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('alunos', {
       id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
-        autoIncrement: true,
+        defaultValue: Sequelize.UUIDV4,
+        // autoIncrement: true,
         primaryKey: true,
       },
       nome: {

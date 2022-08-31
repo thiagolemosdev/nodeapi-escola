@@ -1,4 +1,5 @@
 import Sequelize, { Model } from 'sequelize';
+
 // importando Sequelize
 
 // criando a class aluno informando que ela extende do Model e já exportando
@@ -7,6 +8,11 @@ export default class Aluno extends Model {
     // chamando o sequelize
 
     super.init({
+      id: {
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
+        primaryKey: true,
+      },
       nome: Sequelize.STRING,
       sobrenome: Sequelize.STRING,
       email: Sequelize.STRING,
@@ -17,6 +23,7 @@ export default class Aluno extends Model {
     }, {
       sequelize,
     });
+
     return this;
   }
 }
