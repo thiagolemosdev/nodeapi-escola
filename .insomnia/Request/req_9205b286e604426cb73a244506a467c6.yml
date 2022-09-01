@@ -1,7 +1,7 @@
 _id: req_9205b286e604426cb73a244506a467c6
 type: Request
 parentId: fld_82d49f09d1614409be51afbef391d460
-modified: 1661923515267
+modified: 1662003326889
 created: 1661913927528
 url: "{{ _.baseURL }}/users/"
 name: Delete
@@ -17,7 +17,7 @@ headers:
     id: pair_5248cccd4bca45e9883329cabce39c21
 authentication:
   type: bearer
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU0ZTc4NzlmLWJiZWUtNGY5Yy05ODQ1LTA4NGVmMTRkYzBkNCIsImVtYWlsIjoidGhpYWdAdGhpYS5jb20iLCJpYXQiOjE2NjE5MjM0ODYsImV4cCI6MTY2MjUyODI4Nn0.dFdK7ZmPBdCwo9dHV4XCFWqvXGcgmS4K1rSBzd-ka1E
+  token: "{{ _.token }}"
 metaSortKey: -1661819239447.125
 isPrivate: false
 settingStoreCookies: true

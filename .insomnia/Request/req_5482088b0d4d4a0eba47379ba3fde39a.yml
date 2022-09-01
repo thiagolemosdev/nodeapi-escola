@@ -1,7 +1,7 @@
 _id: req_5482088b0d4d4a0eba47379ba3fde39a
 type: Request
 parentId: fld_82d49f09d1614409be51afbef391d460
-modified: 1661965896331
+modified: 1662003330775
 created: 1661897623820
 url: "{{ _.baseURL }}/users/"
 name: Update
@@ -23,7 +23,7 @@ headers:
     id: pair_5248cccd4bca45e9883329cabce39c21
 authentication:
   type: bearer
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0OTZjYzBhLTFjNzQtNDIxMy1iMjc0LWI2MDViMTExZjgzYSIsImVtYWlsIjoidGhpYWdvQHRoLmNvbSIsImlhdCI6MTY2MTk1NTk1OCwiZXhwIjoxNjYyNTYwNzU4fQ.D9jwY3D6B7xd7olb6oOCK-sw6lCFYxl9-EBD0oUUU_E
+  token: "{{ _.token }}"
 metaSortKey: -1661817968733.75
 isPrivate: false
 settingStoreCookies: true

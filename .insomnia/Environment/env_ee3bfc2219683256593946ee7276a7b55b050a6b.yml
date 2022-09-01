@@ -1,14 +1,16 @@
 _id: env_ee3bfc2219683256593946ee7276a7b55b050a6b
 type: Environment
 parentId: wrk_5185a9de3fd5499fac2b91cf521bb9e3
-modified: 1661815380590
+modified: 1662003286314
 created: 1661815321136
 name: Base Environment
 data:
   baseURL: server.pessoal.ws:3000
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0OTZjYzBhLTFjNzQtNDIxMy1iMjc0LWI2MDViMTExZjgzYSIsImVtYWlsIjoidGhpYWdvQHRoLmNvbSIsImlhdCI6MTY2MjAwMzI1MywiZXhwIjoxNjYyNjA4MDUzfQ._SdxpXeuodCF4vv7RBw7ggvX3zj5erBMUI_l4Fv8V54
 dataPropertyOrder:
   "&":
     - baseURL
+    - token
 color: null
 isPrivate: false
 metaSortKey: 1661815321136
