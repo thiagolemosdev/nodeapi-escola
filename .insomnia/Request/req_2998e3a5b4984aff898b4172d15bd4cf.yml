@@ -1,0 +1,33 @@
+_id: req_2998e3a5b4984aff898b4172d15bd4cf
+type: Request
+parentId: fld_14a99d3f2f924eeb8d4fc8207cf2707d
+modified: 1661994882417
+created: 1661984831749
+url: "{{ _.baseURL }}/fotos"
+name: Store
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_8f07e4d0f1994edabb0e749c28d18654
+      name: foto
+      value: ""
+      description: ""
+      type: file
+      multiline: null
+      fileName: C:\Users\thiago.oliveira\Downloads\certificado.crt
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_a99550f76ac14a7dac4e3571332a4c44
+authentication: {}
+metaSortKey: -1661970057663
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
