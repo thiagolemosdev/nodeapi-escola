@@ -1,9 +1,9 @@
 _id: req_c53ebd4596e841d982cfb3cc9426a808
 type: Request
 parentId: fld_3b5eb61332f1413cbf294d4957213907
-modified: 1661956044483
+modified: 1661984762564
 created: 1661955311819
-url: "{{ _.baseURL }}/alunos/82a5c7ca-edd1-43b8-b2de-3a8c34f604ad"
+url: "{{ _.baseURL }}/alunos/a96eac19-800b-4ca7-9173-4923ae16bdab"
 name: Update
 description: ""
 method: PUT
@@ -22,7 +22,9 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_e7e81ace9c5d44d2aa20c8477d1710f2
-authentication: {}
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IpXVCJ9.eyJpZCI6ImM0OTZjYzBhLTFjNzQtNDIxMy1iMjc0LWI2MDViMTExZjgzYSIsImVtYWlsIjoidGhpYWdvQHRoLmNvbSIsImlhdCI6MTY2MTk4MDc5NSwiZXhwIjoxNjYyNTg1NTk1fQ.ignepv6KisB9vZY2SxVFK9zIUcj1DQBgCBk0x4RovbE
 metaSortKey: -1661926132188
 isPrivate: false
 settingStoreCookies: true

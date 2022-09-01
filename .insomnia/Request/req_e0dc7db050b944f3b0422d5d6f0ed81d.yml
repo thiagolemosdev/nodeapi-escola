@@ -1,26 +1,22 @@
-_id: req_875a84816ff94592804270f6c2036e21
+_id: req_e0dc7db050b944f3b0422d5d6f0ed81d
 type: Request
-parentId: fld_549869f0239247c2bd0c4567146b702e
-modified: 1661980805517
-created: 1661916181925
-url: "{{ _.baseURL }}/tokens"
-name: Token
+parentId: fld_82d49f09d1614409be51afbef391d460
+modified: 1661907069716
+created: 1661884189528
+url: "{{ _.baseURL }}/users/41e79568-8227-4f4c-8bec-936cbf8cda5a"
+name: Show
 description: ""
-method: POST
+method: GET
 body:
   mimeType: application/json
-  text: |-
-    {
-    	"email": "thiago@th.com",
-    	"password": "123456"
-    }
+  text: ""
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_896f2903a51b45bfa95a96c4934f5798
+    id: pair_5248cccd4bca45e9883329cabce39c21
 authentication: {}
-metaSortKey: -1661916181925
+metaSortKey: -1661820510160.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
