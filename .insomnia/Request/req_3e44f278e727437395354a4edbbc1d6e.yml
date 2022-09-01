@@ -1,7 +1,7 @@
 _id: req_3e44f278e727437395354a4edbbc1d6e
 type: Request
 parentId: fld_3b5eb61332f1413cbf294d4957213907
-modified: 1661976263988
+modified: 1662007037240
 created: 1661955229203
 url: "{{ _.baseURL }}/alunos"
 name: Store
@@ -11,9 +11,9 @@ body:
   mimeType: application/json
   text: |-
     {
-    		"nome": "Marcelo",
+    		"nome": "Junior",
     		"sobrenome": "lemos",
-    		"email": "marcelo@th.com",
+    		"email": "junior@th.com",
     		"idade": 25,
     		"altura": 1.7,
     		"peso": 95.5
@@ -23,7 +23,9 @@ headers:
   - name: Content-Type
     value: application/json
     id: pair_46bc82e42c34432d862ae099f248c977
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1661926132163
 isPrivate: false
 settingStoreCookies: true

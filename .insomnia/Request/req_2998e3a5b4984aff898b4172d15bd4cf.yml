@@ -1,7 +1,7 @@
 _id: req_2998e3a5b4984aff898b4172d15bd4cf
 type: Request
 parentId: fld_14a99d3f2f924eeb8d4fc8207cf2707d
-modified: 1661994882417
+modified: 1662009396657
 created: 1661984831749
 url: "{{ _.baseURL }}/fotos"
 name: Store
@@ -16,13 +16,19 @@ body:
       description: ""
       type: file
       multiline: null
-      fileName: C:\Users\thiago.oliveira\Downloads\certificado.crt
+      fileName: C:\Users\Thiago\Downloads\download.png
+    - id: pair_a57557273cd141ffa0a4dd77b0973771
+      name: aluno_id
+      value: f29ef3bd-bcb6-4e43-808e-2ad0f2e40391
+      description: ""
 parameters: []
 headers:
   - name: Content-Type
     value: multipart/form-data
     id: pair_a99550f76ac14a7dac4e3571332a4c44
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1661970057663
 isPrivate: false
 settingStoreCookies: true

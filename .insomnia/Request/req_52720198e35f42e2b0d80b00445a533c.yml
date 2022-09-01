@@ -1,7 +1,7 @@
 _id: req_52720198e35f42e2b0d80b00445a533c
 type: Request
 parentId: fld_82d49f09d1614409be51afbef391d460
-modified: 1661923839436
+modified: 1662007030721
 created: 1661874026618
 url: "{{ _.baseURL }}/users/show"
 name: Show
@@ -14,7 +14,7 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgyMTUwZDk4LWZjZjgtNGNhMC1hNjQ3LWMzYWYzNDZmZDAwNyIsImVtYWlsIjoidGhAdGguY29tIiwiaWF0IjoxNjYxOTIzNjUzLCJleHAiOjE2NjI1Mjg0NTN9.px155XqrcofbxTqjIZg4-Kr83fq_TpmuF8Mchwe9_7Q
+  token: "{{ _.token }}"
 metaSortKey: -1661830675867.5
 isPrivate: false
 settingStoreCookies: true
