@@ -1,9 +1,17 @@
 import Aluno from '../models/Aluno';
+import Foto from '../models/Foto';
 
 class AlunoController {
   async index(req, res) {
     try {
-      const alunos = await Aluno.findAll();
+      const alunos = await Aluno.findAll({
+        attributes: ['id', 'nome', 'sobrenome', 'email', 'idade', 'peso', 'altura'],
+        order: [['id', 'DESC'], [Foto, 'id', 'DESC']],
+        include: {
+          model: Foto,
+          attributes: ['id', 'url', 'filename'],
+        },
+      });
       return res.json(alunos);
     } catch (e) {
       return res.status(400).json({ errors: e.errors.map((err) => err.message) });
@@ -44,7 +52,14 @@ class AlunoController {
         return res.status(400).json({ error: 'É necessario o id do cliente' });
       }
 
-      const aluno = await Aluno.findByPk(req.params.id);
+      const aluno = await Aluno.findByPk(req.params.id, {
+        attributes: ['id', 'nome', 'sobrenome', 'email', 'idade', 'peso', 'altura'],
+        order: [['id', 'DESC'], [Foto, 'id', 'DESC']],
+        include: {
+          model: Foto,
+          attributes: ['id', 'url', 'filename'],
+        },
+      });
       if (!aluno) {
         return res.status(400).json({ error: 'Aluno não encontrado' });
       }
@@ -62,7 +77,7 @@ class AlunoController {
 
       const aluno = await Aluno.findByPk(req.params.id);
       if (!aluno) {
-        return res.status(400).json({ error: 'Aluno não encontrado' });
+        return res.status(400).json({ error: 'Aaluno não encontrado' });
       }
 
       await aluno.destroy();

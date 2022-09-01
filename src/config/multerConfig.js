@@ -9,7 +9,7 @@ export default {
     // Metodo para filtrar o tipo que vai receber
 
     if (file.mimetype !== 'image/png' && file.mimetype !== 'image/jpeg') {
-      return cb(new multer.MulterError('Arquivos precisa ser PNG ou JPG.'));
+      return cb(new multer.MulterError('O arquivo precisa ser PNG ou JPG.'));
     }
     // Se for diferente retornar erro
 
@@ -19,7 +19,7 @@ export default {
   storage: multer.diskStorage({
     // Esse parametro serve para salvarmos os arquivos no nosso servidor
     destination: (req, file, cb) => {
-      cb(null, resolve(__dirname, '..', '..', 'uploads'));
+      cb(null, resolve(__dirname, '..', '..', 'uploads', 'images'));
       // O primeiro parametro é onde chamamos algum erro caso aconteça
       // O segundo é onde vai ser salvo nossos arquivos.
     },
